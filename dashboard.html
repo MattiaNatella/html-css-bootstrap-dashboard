@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT AWESOME -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' integrity='sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==' crossorigin='anonymous'/>
+
+  <!-- BOOTSTRAP -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form dashboard</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar mb-2 navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/duck.png" alt="Bootstrap" width="60" height="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">Catalogo Libri</a>
+            <a class="nav-link" href="#">Anagrafica Utenti</a>
+            <a class="nav-link" href="#">Storico Prestiti</a>
+            <a class="nav-link" href="#">Help</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <form action="#">
+    <div class="container">
+      <div class="row">
+        <h2 class="p-0">Nuovo Libro </h2>
+        <div class="col-6 bg-success">Nome Autore</div>
+        <div class="col-6 bg-warning">Cognome autore</div>
+        <div class="col-12 bg-danger">Titolo</div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 my-4">
+        <div class="col bg-primary">Genere</div>
+        <div class="col bg-secondary">Anno di Pubblicazione</div>
+        <div class="col bg-dark">ISBN#</div>
+      </div>
+      <hr>
+      <div class="form-floating">
+        <label for="floatingTextarea">Inserisci eventuali note sul</label>
+        <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="floatingTextarea"></textarea>
+      </div>
+       <input type="checkbox">
+       <label class="fs-6 fw-semibold" for="">Disponibile anche in digitale</label>
+      <button class="btn text-bg-primary d-block" type="submit">Aggiungi libro</button>
+    </div>
+  </form>
+  </body>
